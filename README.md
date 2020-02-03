@@ -20,7 +20,7 @@
 
 ## Create a Basic Virtual Service for Guestbook Application
 - `cd workshop/plans`
-- `oc create -f guestbook-gateway.yaml`  ----> THE FIRST VITUAL SERVICE POINT TO THE K8S SERVICE
+- `oc create -f guestbook-gateway.yaml`  ----> THE FIRST VIRTUAL SERVICE POINTS TO THE K8S SERVICE
 - `oc create -f guestbook-destination.yaml`
 - Test the Application and Kiali interface
 
