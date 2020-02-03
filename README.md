@@ -1,8 +1,14 @@
 # Istiolab
 
-## Download the Guestbook app and create the Redis database
-
+## Download the assets
 - `git clone https://github.com/fxnaranjo/istiolab.git` --> Download the assets
+
+## Create Openshift project and configuration
+- `oc new-project guestbook` --> Creates new project
+- `cd istioConfig`
+- `oc create -f istioMember.yaml`
+
+## Create the Redis database
 - `cd guestbook/v2`
 - `oc create -f redis-master-deployment.yaml`
 - `oc create -f redis-master-service.yaml`
