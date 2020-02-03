@@ -24,3 +24,9 @@
 - `oc create -f guestbook-destination.yaml`
 - Test the Application and Kiali interface
 
+## Test different routing configurations
+- `oc apply -f virtualservice-50-50.yaml` --> 50%-50% Load
+- `oc apply -f virtualservice-all-v1.yaml` --> All Requests routed to V1
+- `oc apply -f virtualservice-80-20.yaml` --> 80%-20% Load to V1 and V2
+- `oc apply -f virtualservice-testBrowser.yaml` --> Requests routed by browser
+
