@@ -1,4 +1,4 @@
-# istiolab
+# Istiolab
 
 ## Download the Guestbook app and create the Redis database
 
