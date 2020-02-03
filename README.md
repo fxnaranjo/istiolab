@@ -11,3 +11,10 @@ git clone https://github.com/fxnaranjo/istiolab.git --> Download the assets
 - oc get deployments ---> CHECK STATUS
 - oc get pods ---> CHECK STATUS
 
+## Create the Guestbook Application
+- cd guestbook/v1
+- oc create -f guestbook-deployment.yaml
+- cd guestbook/v2
+- oc create -f guestbook-deployment.yaml
+- oc create -f guestbook-service.yaml
+
