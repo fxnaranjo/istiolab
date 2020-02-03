@@ -1,0 +1,14 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: guestbook-ingress
+  namespace: istio-system
+spec:
+  rules:
+    - host: guestbook.apps.ocp4.demo.com
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: istio-ingressgateway
+              servicePort: 80  

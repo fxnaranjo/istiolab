@@ -1,0 +1,19 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: virtual-service-guestbook
+spec:
+  hosts:
+    - '*'
+  gateways:
+    - guestbook-gateway
+  http:
+    - route:
+        - destination:
+            host: guestbooksvc
+            subset: v1
+          weight: 50
+        - destination:
+            host: guestbooksvc
+            subset: v2
+          weight: 50
