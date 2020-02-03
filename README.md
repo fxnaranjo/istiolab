@@ -22,5 +22,5 @@
 - `cd workshop/plans`
 - `oc create -f guestbook-gateway.yaml`  ----> THE FIRST VITUAL SERVICE POINT TO THE K8S SERVICE
 - `oc create -f guestbook-destination.yaml`
-- Test the application and kiali interface
+- Test the Application and Kiali interface
 
